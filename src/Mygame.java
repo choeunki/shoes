@@ -24,11 +24,11 @@ class Mygame extends JPanel implements LineListener { // 선그리기
 	int speed_y = 5;
 
 	Image back1 = Toolkit.getDefaultToolkit().getImage("bg.png");
-	Image back2 = Toolkit.getDefaultToolkit().getImage("구름.gif");
-	Image back3 = Toolkit.getDefaultToolkit().getImage("puppy.png");
+	Image back2 = Toolkit.getDefaultToolkit().getImage("kkachi.gif");
+	Image back3 = Toolkit.getDefaultToolkit().getImage("puppy.gif");
 	Image back4 = Toolkit.getDefaultToolkit().getImage("네트.png");
 
-	Image ball = Toolkit.getDefaultToolkit().getImage("회전공2.gif");
+	Image ball = Toolkit.getDefaultToolkit().getImage("gomoosin.gif");
 
 	Image player1 = Toolkit.getDefaultToolkit().getImage("leftCha.gif");
 	Image player1_jump = Toolkit.getDefaultToolkit().getImage("좌점.gif");

@@ -13,9 +13,11 @@ import javax.swing.JPanel;
 
 class Mystart extends JPanel {
 	private static final int EXIT_ON_CLOSE = 0;
-	Image Start_img = Toolkit.getDefaultToolkit().getImage("시작배경.gif");
-	Image i_start = Toolkit.getDefaultToolkit().getImage("게임시작.gif");
-	Image i_end = Toolkit.getDefaultToolkit().getImage("게임종료.gif");
+	Image Start_img = Toolkit.getDefaultToolkit().getImage("startBG.jpg");
+	Image i_start = Toolkit.getDefaultToolkit().getImage("i_start.png");
+	Image i_end = Toolkit.getDefaultToolkit().getImage("i_end.png");
+	Image s_start = Toolkit.getDefaultToolkit().getImage("s_start.png");
+	Image s_end = Toolkit.getDefaultToolkit().getImage("s_end.png");
 	public static boolean start = true;
 	public static boolean end = false;
 
@@ -27,17 +29,17 @@ class Mystart extends JPanel {
 
 	void draw_start(Graphics g) {
 		if (start == false) {
-			g.drawImage(i_start, 240, 300, 190, 40, this);
+			g.drawImage(i_start, 340, 350, 250, 170, this);
 		} else {
-			g.drawImage(i_start, 230, 290, 210, 60, this);
+			g.drawImage(s_start, 340, 350, 250, 170, this);
 		}
 	}
 
 	void draw_end(Graphics g) {
 		if (end == false) {
-			g.drawImage(i_end, 240, 430, 190, 40, this);
+			g.drawImage(i_end, 340, 510, 250, 170, this);
 		} else {
-			g.drawImage(i_end, 230, 420, 210, 60, this);
+			g.drawImage(s_end, 340, 510, 250, 170, this);
 		}
 	}
 }
